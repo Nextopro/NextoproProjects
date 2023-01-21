@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           
+        }
+
+        .main-box {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .box {
+            height: 60vh;
+            width: 60vw;
+
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .stick {
+            height: 450px;
+            width: 10px;
+            background: black;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .flag {
+            width: 270px;
+            height: 180px;
+            box-shadow: 0px 0px 90px 1px #989;
+            background-color: transparent;
+            position: relative;
+        }
+
+        .top {
+            height: 60px;
+            background-color: #ff9933
+        }
+
+        .middle {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom {
+            height: 60px;
+            background-color: green
+        }
+
+        .wheel {
+            height: 43px;
+            width: 43px;
+            border: 1px solid darkblue;
+            border-radius: 45px;
+            position: relative;
+            margin: 0 auto;
+            animation-name: wheel;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+
+        .wheel .line {
+            height: 100%;
+            width: 1px;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            background: darkblue;
+        }
+
+        .line:nth-child(1) {
+            transform: rotate(15deg)
+        }
+
+        .line:nth-child(2) {
+            transform: rotate(30deg)
+        }
+
+        .line:nth-child(3) {
+            transform: rotate(45deg)
+        }
+
+        .line:nth-child(4) {
+            transform: rotate(60deg)
+        }
+
+        .line:nth-child(5) {
+            transform: rotate(75deg)
+        }
+
+        .line:nth-child(6) {
+            transform: rotate(90deg)
+        }
+
+        .line:nth-child(7) {
+            transform: rotate(105deg)
+        }
+
+        .line:nth-child(8) {
+            transform: rotate(120deg)
+        }
+
+        .line:nth-child(9) {
+            transform: rotate(135deg)
+        }
+
+        .line:nth-child(10) {
+            transform: rotate(150deg)
+        }
+
+        .line:nth-child(11) {
+            transform: rotate(165deg)
+        }
+
+        .line:nth-child(12) {
+            transform: rotate(180deg)
+        }
+
+        @keyframes wheel {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .wave {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(128deg, rgba(89, 72, 21, 0) 39%,
+                    rgba(250, 245, 245, 0.8474025974025974) 46%, rgba(89, 72, 21, 0) 53%);
+            animation-name: wavy;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes wavy {
+            0% {
+                background-position:
+                    -400px 0px, -400px 0px,
+                    -400px 0px, -400px 0px;
+            }
+
+            100% {
+                background-position: 800px 0px,
+                    800px 0px, 800px 0px, 800px 0px;
+            }
+        }
+        .antham{
+            position: absolute;
+            top: 120px;
+            right: 250px;
+            font-family: cursive;
+            color: darkgreen;
+            text-align: center;
+            text-shadow: #000;
+            background-image: url('./c.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .ind{
+            position: absolute;
+            top: 27rem;
+            left: 25rem;
+            
+        }
+        .ind img{
+            width: 350px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="box">
+            <div class="wrapper">
+                <div class="stick"></div>
+                <div class="flag">
+                    <div class="wave"></div>
+                    <div class="top"></div>
+                    <div class="middle">
+                        <div class="wheel">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="antham">
+        <h2 class="animate-charcter">Jana Gana Mana</h2>
+        <h2 class="animate-charcter">Adhinayaka Jay He</h2>
+        <h2 class="animate-charcter">Bharata Bhagya Vidhata</h2>
+        <h2 class="animate-charcter">Panjab Sindhu Gujarat Maratha</h2>
+        <h2 class="animate-charcter">Dravida Utkala Banga</h2>
+        <h2 class="animate-charcter">Vindhya Himachal Yamuna Ganga</h2>
+        <h2 class="animate-charcter">Uchchala Jaladhi Taranga</h2>
+        <h2 class="animate-charcter">Tava Subha Name Jaage</h2>
+        <h2 class="animate-charcter">Tave Subha Aashish Mange</h2>
+        <h2 class="animate-charcter">Gaahe Tava Jay Gaatha</h2>
+        <h2 class="animate-charcter">Jana Gana Mangal Daayak Jay He</h2>
+        <h2 class="animate-charcter">Bharat Bhagya Vidhata</h2>
+        <h2 class="animate-charcter">Jay he Jay he Jay he</h2>
+        <h2 class="animate-charcter">Jay Jay Jay Jay He</h2>
+        <h2 class="animate-charcter">Jay Hind</h2>
+    </div>
+    <div class="ind">
+       <img src="https://static.toiimg.com/photo/77542984.cms" alt="">
+    </div>
+</body>
+
+</html>
