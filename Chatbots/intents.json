@@ -4,14 +4,14 @@
          "responses": ["Hello, Greetings of the day!, How can i help you"],
          "context": [""]
         },
-        {"tag": "greeting",
-         "patterns": ["How are you"],
-         "responses": ["I am good thanks for asking, How are you?"],
+        {"tag": "question",
+         "patterns": ["How are you?"],
+         "responses": ["I am good, thanks for asking, How about you?"],
          "context": [""]
         },
-       {"tag": "greeting",
+       {"tag": "reply",
          "patterns": ["I am good","Fyn","I'm fyn"],
-         "responses": ["Nice to hear you "],
+         "responses": ["Nice to hear you"],
          "context": [""]
         },
         {"tag": "goodbye",
